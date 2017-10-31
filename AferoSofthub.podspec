@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 
-  s.name         = "AferoSofthubRelease"
-  s.module_name  = "AferoSofthubRelease"
+  s.name         = "AferoSofthub"
+  s.module_name  = "AferoSofthub"
   s.version      = "1.1.0"
   s.summary      = "Afero hub library (binary distribution)"
   s.description  = "Softhub support for Afero devices."
   s.homepage     = "https://github.com/aferodeveloper/hubby"
   s.license      = "Proprietary"
-  s.author             = { "Stephen Sewerynek" => "stephen@kiban.io" }
+  s.author             = { "Afero, Inc." => "developer@afero.io" }
 
   s.ios.deployment_target = "8.4"
   s.osx.deployment_target = "10.10"
@@ -40,24 +40,3 @@ Pod::Spec.new do |s|
   }
 
 end
-
-
-
-  #MY_LIB_ROOT = "${PODS_TARGET_SRCROOT}/thirdparty-ios"
-  #MY_HEADER_ROOT = "${PODS_TARGET_SRCROOT}/thirdparty-ios"
-
-  #header_search_paths = '$(inherited) ' + [
-  #  'json-c-0.12/ios/include',
-  #  'curl-7.50.3/ios/prebuilt-with-ssl/include',
-  #  'libevent-2.0.22-stable/ios/include',
-  #  'openssl-1.0.1u/ios/include'
-  #  ].map { |p| MY_HEADER_ROOT + "/" + p }.join(" ")
-#
-#  library_search_paths = '$(inherited) ' + [
-#    'curl-7.50.3/ios/prebuilt-with-ssl',
-#    'json-c-0.12/ios/libs',
-##    'libevent-2.0.22-stable/ios/lib',
-#    'openssl-1.0.1u/ios/lib',
-#    'zlib-1.2.8/ios/lib'
-#    ].map { |p| MY_LIB_ROOT + "/" + p }.join(" ")
-#
