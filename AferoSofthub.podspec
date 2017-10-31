@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.4"
   s.osx.deployment_target = "10.10"
-  s.source       = { :git => "git@github.com:aferodeveloper/AferoSofthubRelease.git", :tag => "#{s.version}" }
+  s.source       = { :git => "git@github.com:aferodeveloper/AferoSofthub.git", :tag => "#{s.version}" }
 
   ARCHIVE_ROOT = "archive/hubby/pkg/src"
 
