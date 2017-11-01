@@ -13,30 +13,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.source       = { :git => "git@github.com:aferodeveloper/AferoSofthub.git", :tag => "#{s.version}" }
 
-  ARCHIVE_ROOT = "archive/hubby/pkg/src"
-
-  s.source_files = "#{ARCHIVE_ROOT}/cocoa/*"
-  s.public_header_files = "#{ARCHIVE_ROOT}/cocoa/AferoSofthub.h"
-  s.frameworks = 'CoreBluetooth', 'SystemConfiguration'
-  s.libraries = "Hubby", "crypto", "curl", "event", "event_core", "event_pthreads", "json-c", "ssl", "z", "stdc++"
-
-  LIBS_DIR = "#{ARCHIVE_ROOT}/ios/libs-debug"
-  s.preserve_paths = LIBS_DIR
-
-  s.vendored_libraries = [
-    "libHubby.a",
-    "libcrypto.a",
-    "libcurl.a",
-    "libevent.a",
-    "libevent_core.a",
-    "libevent_pthreads.a",
-    "libjson-c.a",
-    "libssl.a",
-    "libz.a"
-  ].map { |p| "#{LIBS_DIR}/#{p}" }
-  
-  s.pod_target_xcconfig = {
-    'LIBRARY_SEARCH_PATHS' => "$(inherited) #{LIBS_DIR}",
-  }
+  s.weak_frameworks = 'CoreBluetooth', 'SystemConfiguration'
+  s.vendored_frameworks = "AferoSofthub.framework"
 
 end

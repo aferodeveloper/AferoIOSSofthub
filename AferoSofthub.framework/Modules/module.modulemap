@@ -1,0 +1,6 @@
+framework module AferoSofthub {
+  umbrella header "AferoSofthub.h"
+
+  export *
+  module * { export * }
+}
