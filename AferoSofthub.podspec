@@ -10,9 +10,13 @@ Pod::Spec.new do |s|
   s.author             = { "Afero, Inc." => "developer@afero.io" }
 
   s.ios.deployment_target = "9.3"
-  s.source       = { :git => "git@github.com:aferodeveloper/AferoSofthub.git", :tag => "#{s.version}" }
+  s.source       = {
+    :git => "git@github.com:aferodeveloper/AferoSofthub.git", :tag => s.version
+  }
+
+  s.prepare_command = '/usr/bin/unzip AferoSofthub.zip' 
 
   s.weak_frameworks = 'CoreBluetooth', 'SystemConfiguration'
-  s.vendored_frameworks = "AferoSofthub.framework"
+  s.vendored_frameworks = "AferoSofthub.framework" 
 
 end
