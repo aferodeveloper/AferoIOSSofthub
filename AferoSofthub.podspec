@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
 
   s.name         = "AferoSofthub"
   s.module_name  = "AferoSofthub"
-  s.version      = "1.1.0"
-  s.summary      = "Afero hub library (binary distribution)"
+  s.version      = "1.1.1"
+  s.summary      = "Afero hub library (binary distribution #55/debug)"
   s.description  = "Softhub support for Afero devices."
   s.homepage     = "https://github.com/aferodeveloper/AferoIOSSofthub"
   s.license      = "Proprietary"
