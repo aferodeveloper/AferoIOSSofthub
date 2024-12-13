@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     :git => "git@github.com:aferodeveloper/AferoIOSSofthub.git", :tag => s.version
   }
 
-  s.prepare_command = '/usr/bin/unzip -o AferoSofthub.zip' 
+  s.prepare_command = '/usr/bin/unzip AferoSofthub.zip' 
 
   s.weak_frameworks = 'CoreBluetooth', 'SystemConfiguration'
   s.vendored_frameworks = "AferoSofthub.framework" 
